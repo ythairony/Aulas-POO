@@ -5,7 +5,7 @@ class Program {
       string nome = Console.ReadLine();
       double sal = double.Parse(Console.ReadLine());
       double sell = double.Parse(Console.ReadLine());
-      double bonus = sell * 0.15
-      Console.Write(bonus);
+      double bonus = sell * 0.15 + sal;
+      Console.WriteLine($"TOTAL = R$ {bonus:f2}");
     }
 }

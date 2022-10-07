@@ -1,4 +1,4 @@
-run = "mcs './Aula20221005/Ex1009.cs' -out:Main.exe ; mono Main.exe"
+run = "mcs './Aula20221005/Ex0006.cs' -out:Main.exe ; mono Main.exe"
 entrypoint = "main.cs"
 
 hidden = ["bin", "obj"]

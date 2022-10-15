@@ -12,15 +12,16 @@ class Program {
       while (j <= x) {
         if (x % j == 0) {
           div++;
-          if (div == 1 && j > (x / 2) || x == 2) Console.WriteLine("Prime");
+          
         }
         j++;
         
       }
     
-    if (div > 1 && j < (x/2)) Console.WriteLine("Not Prime");
+    
     i++;
     }
-    
+    if (div == 1 && j > (x / 2) || x == 2) Console.WriteLine("Prime");
+    else (div > 1 && j < (x/2)) Console.WriteLine("Not Prime");
   }
 }

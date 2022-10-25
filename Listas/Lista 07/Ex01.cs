@@ -1,16 +1,19 @@
 using System;
 
-class MainClass {
-  public static double Circuferencia(int raio) {
-    double pi = 3.14159;
-    double circ = 2 * pi * raio;
-    return circ;
+class Program {
+  public static void Main(){
+    Console.WriteLine("Informe um valor: ");
+    double x = double.Parse(Console.ReadLine());
+    Console.WriteLine("Informe outro valor: ");
+    double y = double.Parse(Console.ReadLine());
+    double maior = Maior(x, y);
+    Console.WriteLine($"O maior valor informado foi {maior}");
   }
 
-  public static void Main() {
-    Console.WriteLine("Informe o valor do raio do círculo");
-    int r = int.Parse(Console.ReadLine());
-    double c = Circuferencia(r);
-    Console.WriteLine($"A circunferência do círculo de raio {r} é {c}");
+  public static double Maior(double a, double b) {
+    double maior;
+    if (a >= b) maior = a;
+    else maior = b;
+    return maior;
   }
 }

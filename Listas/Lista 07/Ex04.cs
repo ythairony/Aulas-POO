@@ -15,7 +15,7 @@ class Program {
     i = 2;
     j = 2;
     mmc = 0;
-    while (mmc != 0) {
+    while (mmc == 0) {
       mmc1 = x * i;
       mmc2 = y * j;
       if (mmc1 == mmc2) {

@@ -10,7 +10,9 @@ class Program {
     
   }
   public static void Intervalo(double x, out int inicio, out int fim) {
-    int a = 0;
+    int a = 0; 
+    inicio = 0;
+    fim = 0;
     while (a < x) {
       a++;
       if (a > x) {

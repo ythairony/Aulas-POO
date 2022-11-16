@@ -5,7 +5,7 @@ class MainClass {
     Console.WriteLine("Informe o raio:");
     double a, c;
     Raio r = new Raio();
-    r.SetRaio = 3;
+    r.SetRaio(double.Parse(Console.ReadLine()));
     a = r.CalcArea();
     c = r.CalcCircunferencia();
     Console.WriteLine($"Área do círculo = {a}");

@@ -3,11 +3,20 @@ using System;
 class Program {
   public static void Main() {
     Console.WriteLine();
-    Carta c1 = new Carta(1, "ouros");
-    Console.WriteLine(c1);
-
-    Carta c2 = new Carta(1, "ouros");
-    Console.WriteLine(c2);
+    Console.WriteLine("Informe o número da 1º carta:");
+    int num1 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Informe o naipe da 1º carta:");
+    string naipe1 = Console.ReadLine();   
+    Carta c1 = new Carta(num1, naipe1);
+    Console.WriteLine();
+    
+    Console.WriteLine("Informe o número da 2º carta:");
+    int num2 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Informe o naipe da 2º carta:");
+    string naipe2 = Console.ReadLine();   
+    Carta c2 = new Carta(num2, naipe2);
+    Console.WriteLine();
+    
     if (Carta.Equals(c1, c2)) {
       Console.WriteLine("São iguais.");
     } else {Console.WriteLine("São diferentes."); }
@@ -44,4 +53,3 @@ class Carta {
     return $"A carta de número {numero} é do naipe de {naipe}";
   }
 }
-

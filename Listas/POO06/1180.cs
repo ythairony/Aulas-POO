@@ -4,8 +4,9 @@ class Program {
   public static void Main() {
     int n = int.Parse(Console.ReadLine());
     int[] x = new int[n];
+    string[] s = Console.ReadLine().Split();
     for (int i = 0; i < n; i++) {
-      x[i] = int.Parse(Console.ReadLine());  
+      x[i] = int.Parse(s[i]);  
     }
     int menor = x[0];
     int index = 0;
